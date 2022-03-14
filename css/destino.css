@@ -1,0 +1,731 @@
+/* CSS Proyecto */
+/* Vars */
+/* Maps */
+/* Mixins */
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  font-family: "Mate SC", sans-serif;
+}
+
+head title {
+  font-family: "Mate SC", sans-serif;
+}
+
+body {
+  flex-wrap: wrap;
+}
+body header {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  width: 100%;
+  position: fixed;
+  background-color: #c5e7eb;
+  height: auto;
+}
+body main {
+  flex-wrap: wrap;
+  width: 100%;
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: rgba(0, 139, 139, 0.808);
+  background-color: #c5e7eb;
+  font-size: 20px;
+  text-align: right;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* HEADER */
+header {
+  z-index: 2;
+}
+header .logoAlisonHeader {
+  display: flex;
+  align-content: flex-start;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  padding-top: 10px;
+  animation-name: animatedLogo;
+}
+header header h1 {
+  display: flex;
+  color: darkcyan;
+  text-decoration: none;
+  background-color: #c5e7eb;
+  background-size: cover;
+  font-family: "Mate SC", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  padding: 20px;
+  position: sticky;
+}
+header .seccionMenu {
+  color: darkcyan;
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: right;
+  margin: 10px;
+  padding-right: 10px;
+}
+header .menuFlex {
+  list-style-type: none;
+  color: #c5e7eb;
+  padding: 10px;
+  padding-top: 40px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-attachment: fixed;
+}
+header ul li a {
+  list-style-type: square;
+  color: lightslategray;
+  font-family: "Mate", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: lighter;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.divIndex, .divLocations, .divContact, .divGallery, .divProducts, .divAboutus {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/9b27dc69484705.5b83706635ebd.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.divAboutus {
+  background-image: url(https://thedesignfiles.net/wp-content/uploads/2020/08/DanielleAlvarez-DreamJob-tdf-7-2200x1235.jpg);
+}
+
+.divProducts {
+  background-image: url(https://f.roocdn.com/images/menus/235882/header-image.jpg?width=1200&height=630&fit=crop);
+}
+
+.divGallery {
+  background-image: url(https://duyt4h9nfnj50.cloudfront.net/resized/1525793290598-w2880-30.jpg);
+}
+
+.divContact {
+  background-image: url(https://www.miamidesigndistrict.net/images/listings/large/731_pura-vida_1572908803441374.jpg);
+}
+
+.divLocations {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/177e2f69484705.5b83706637a2d.jpg);
+}
+
+/* MAIN */
+section .horariosAlison {
+  display: grid;
+  color: rgba(2, 138, 138, 0.459);
+  font-size: 20px;
+  text-align: center;
+  border-width: 2px;
+  border-radius: 20px;
+  border-right: 2px;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Index */
+section .menuResto {
+  border-radius: 15px;
+  border-style: double;
+  color: rgba(0, 139, 139, 0.808);
+  margin: 30px;
+  padding: 10px;
+}
+section main h2 {
+  color: lightslategray;
+  font-size: 30px;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+section #coffee {
+  color: darkcyan;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+section .inicio {
+  color: rgba(2, 138, 138, 0.459);
+  font-size: 25px;
+  text-align: center;
+}
+section .legendIndex {
+  color: rgba(2, 138, 138, 0.459);
+  font-size: 25px;
+  text-align: center;
+}
+section .linkMenu {
+  color: rgba(2, 138, 138, 0.329);
+  font-size: 25px;
+  text-align: center;
+  text-decoration-line: none;
+  margin: 20px;
+  padding: 10px;
+}
+section .fieldsetIndex {
+  display: grid;
+  color: rgba(0, 139, 139, 0.808);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 2px;
+  border-color: dimgrey;
+  border-style: dashed;
+  border-color: #c5e7eb;
+  margin: 20px;
+  padding: 10px;
+}
+section .productsIndex {
+  display: grid;
+  color: rgba(0, 139, 139, 0.808);
+  font-size: 23px;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  justify-items: center;
+  margin: 20px;
+  padding: 10px;
+}
+section #selectInfo {
+  color: dimgrey;
+  font-size: 15px;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* About us */
+section .preguntasAboutus {
+  color: darkcyan;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+section .pAboutus {
+  color: dimgrey;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Products */
+section .containerProducts {
+  z-index: 2;
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+section .productsTitulos {
+  display: flex;
+  color: darkcyan;
+  font-size: 40px;
+  text-align: left;
+  text-decoration: underline;
+  margin: 10px;
+  padding: 10px;
+}
+section .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #f5f1f1;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  margin: 10px;
+}
+section .card-img-top {
+  border-radius: 1rem;
+  padding: 5px;
+  padding-top: 10px;
+  width: 100%;
+}
+section .card-body {
+  flex: auto;
+  padding: 10px;
+}
+section .descripcionesProducts {
+  display: flex;
+  text-decoration: double;
+  color: darkcyan;
+  font-size: 25px;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+section .especificacionesProducts {
+  display: flex;
+  color: lightslategray;
+  font-size: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-variant: small-caps;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Gallery */
+.carouselIndexGallery {
+  width: 50%;
+  height: 50%;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Contact */
+section .pContact {
+  color: dimgrey;
+  font-size: 20px;
+  text-align: left;
+}
+section .spanContact {
+  color: dimgrey;
+  font-size: 15px;
+  display: flex;
+}
+section #info {
+  color: dimgrey;
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+section .formularioRespuesta {
+  color: dimgrey;
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+section .contactar {
+  color: darkcyan;
+  font-size: 20px;
+  text-align: left;
+  border-width: 2px;
+  border-radius: 20px;
+  border-style: hidden;
+  border-color: slategray;
+  margin: 10px;
+  padding: 10px;
+}
+section .legendContact {
+  color: dimgrey;
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Locations */
+section {
+  flex-wrap: wrap;
+}
+section .sucursalesLocations {
+  color: rgba(0, 139, 139, 0.575);
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: overline;
+}
+section .adress {
+  color: dimgrey;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 0px;
+  padding-bottom: 30px;
+}
+
+/* FOOTER */
+footer div .footerAlison {
+  color: rgba(0, 139, 139, 0.808);
+  font-size: 23px;
+  text-align: left;
+  background-color: #c5e7eb;
+  margin: 10px;
+  width: 100%;
+  padding-left: 30px;
+  padding: 20px;
+}
+footer .FooterSocial {
+  color: rgba(0, 139, 139, 0.808);
+  border-color: rgba(0, 139, 139, 0.808);
+  text-align: right;
+  margin: 10px;
+}
+footer .btn-group {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  padding: 20px;
+}
+footer .btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0, 139, 139, 0.808);
+  vertical-align: middle;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s;
+  transition: color 0.15s;
+  transition: color 0.15s;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+footer .btn-outline-secondary {
+  color: #6c757d;
+  border-color: rgba(0, 139, 139, 0.808);
+}
+
+/* IMAGENES */
+/* Imagenes INDEX */
+/* Imagenes ABOUT-US */
+.img1Aboutus {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  height: 55%;
+  margin: 30px;
+  padding: 20px;
+}
+
+.img2Aboutus {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  margin: 30px;
+  padding: 20px;
+}
+
+/* Imagenes PRODUCTS */
+.imgsProducts {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Imagenes GALLERY */
+.imgsGallery {
+  display: grid;
+  grid-area: auto;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Imagenes CONTACT */
+/* Imagenes LOCATIONS */
+/* GRIDS EXPLICITA */
+.fieldsetContact1, .fieldsetContact2 {
+  display: grid;
+  color: dimgrey;
+  font-size: 20px;
+  text-align: left;
+  border-width: 2px;
+  border-radius: 20px;
+  border-style: dashed;
+  border-color: slategray;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Nombrar AREAS */
+header {
+  grid-area: cabeza;
+}
+
+footer {
+  grid-area: pie;
+}
+
+#sectionHome {
+  grid-area: home;
+}
+
+#sectionAboutus {
+  grid-area: aboutus;
+}
+
+#sectionProducts {
+  grid-area: products;
+  padding: 10px;
+  margin: 10px;
+}
+
+#sectionGallery {
+  display: grid;
+  grid-area: gallery;
+  margin: 10px;
+  padding: 10px;
+}
+
+#sectionContact {
+  display: grid;
+  grid-area: contact;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#sectionLocations {
+  grid-area: location;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: none;
+  align-items: center;
+}
+
+.mainLocations {
+  display: grid;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* RESPONSIVE WEB DESIGN 
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .seccionMenu {
+    color: darkcyan;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: right;
+    margin: 20px;
+    padding-right: 10px;
+  }
+
+  .menuFlex {
+    list-style-type: none;
+    color: #c5e7eb;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  ul li a {
+    display: flex;
+    list-style-type: square;
+    color: lightslategray;
+    font-family: "Mate", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 25px;
+  }
+}
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  header {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+
+  .seccionMenu {
+    color: darkcyan;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: right;
+    margin: 20px;
+    padding-right: 10px;
+  }
+
+  .menuFlex {
+    list-style-type: none;
+    color: #c5e7eb;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+
+  ul li a {
+    display: flex;
+    list-style-type: none;
+    color: lightslategray;
+    font-family: "Mate", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 25px;
+  }
+}
+/* Smartphone */
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+
+  .seccionMenu {
+    color: darkcyan;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: right;
+    margin: 20px;
+    padding-right: 10px;
+  }
+
+  .menuFlex {
+    list-style-type: none;
+    color: #c5e7eb;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  ul li a {
+    display: flex;
+    list-style-type: square;
+    color: lightslategray;
+    font-family: "Mate", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 25px;
+    align-content: flex-end;
+  }
+
+  .productsIndex {
+    display: grid;
+    color: rgba(0, 139, 139, 0.808);
+    font-size: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .formContact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* GRADIENTES */
+.gradLineal {
+  background-image: linear-gradient(blue lightblue);
+}
+
+/* TRANSICIONES */
+.logoAlisonHeader:hover {
+  width: 120px;
+  height: 120px;
+  transition-duration: 2s;
+}
+
+a:hover {
+  font-size: 27px;
+  transition-duration: 1s;
+}
+
+.menuResto:hover {
+  background-image: linear-gradient(blue lightblue);
+}
+
+/* TRANSFORMACIONES */
+/* ANIMACIONES */
+.div1Animado {
+  animation-name: div1Animado;
+  animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__backInDown {
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+/* KEYFRAMES */
+/* PSEUDO CLASES - PSEUDO ELEMENTOS */
+:link {
+  color: lightslategray;
+  font-size: 23px;
+  text-align: center;
+}
+
+:visited {
+  color: lightslategray;
+  font-size: 23px;
+  text-align: center;
+}
+
+:active {
+  color: lightslategray;
+  font-size: 23px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=destino.css.map */
