@@ -379,6 +379,12 @@ section {
 /* Contact */
 
 section {
+
+    .containerContact {
+        display: flex;
+
+    }
+
     .pContact {
         color: $colorTitulos;
         font-size: 20px;
@@ -592,22 +598,6 @@ footer {
 
 /* Nombrar AREAS */
 
-header {
-    grid-area: cabeza;
-}
-
-footer {
-    grid-area: pie;
-}
-
-#sectionHome {
-    grid-area: home;
-}
-
-#sectionAboutus {
-    grid-area: aboutus;
-}
-
 #sectionProducts {
     grid-area: products;
     padding: 10px;
@@ -620,17 +610,7 @@ footer {
     @include espacios(10px, 10px);
 }
 
-#sectionContact {
-    display: grid;
-    grid-area: contact;
-    grid-template-columns: 1fr 1fr;
-}
 
-
-.formContact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 #sectionLocations {
     grid-area: location;
@@ -742,6 +722,11 @@ footer {
         text-decoration: none;
         margin: 25px;
     }
+
+    .containerContact {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -803,10 +788,9 @@ footer {
         @include espacios(20px, 10px);
     }
 
-
-    .formContact {
-        display: grid;
-        grid-template-columns: 1fr;
+    .containerContact {
+        display: flex;
+        flex-direction: column;
     }
 
 }

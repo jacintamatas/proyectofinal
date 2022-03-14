@@ -298,6 +298,9 @@ section .especificacionesProducts {
 }
 
 /* Contact */
+section .containerContact {
+  display: flex;
+}
 section .pContact {
   color: dimgrey;
   font-size: 20px;
@@ -470,22 +473,6 @@ footer .btn-outline-secondary {
 }
 
 /* Nombrar AREAS */
-header {
-  grid-area: cabeza;
-}
-
-footer {
-  grid-area: pie;
-}
-
-#sectionHome {
-  grid-area: home;
-}
-
-#sectionAboutus {
-  grid-area: aboutus;
-}
-
 #sectionProducts {
   grid-area: products;
   padding: 10px;
@@ -497,17 +484,6 @@ footer {
   grid-area: gallery;
   margin: 10px;
   padding: 10px;
-}
-
-#sectionContact {
-  display: grid;
-  grid-area: contact;
-  grid-template-columns: 1fr 1fr;
-}
-
-.formContact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 #sectionLocations {
@@ -611,6 +587,11 @@ footer {
     text-decoration: none;
     margin: 25px;
   }
+
+  .containerContact {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /* Smartphone */
 @media (max-width: 480px) {
@@ -670,9 +651,9 @@ footer {
     padding: 10px;
   }
 
-  .formContact {
-    display: grid;
-    grid-template-columns: 1fr;
+  .containerContact {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* GRADIENTES */
