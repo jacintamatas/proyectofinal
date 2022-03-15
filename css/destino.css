@@ -53,27 +53,45 @@ header .logoAlisonHeader {
   padding-top: 10px;
   animation-name: animatedLogo;
 }
-header header h1 {
+header .container-fluid {
   display: flex;
-  color: darkcyan;
-  text-decoration: none;
-  background-color: #c5e7eb;
-  background-size: cover;
-  font-family: "Mate SC", sans-serif;
-  font-style: normal;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: left;
-  padding: 20px;
-  position: sticky;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
 }
-header .seccionMenu {
-  color: darkcyan;
-  font-size: 30px;
-  font-weight: lighter;
-  text-align: right;
-  margin: 10px;
-  padding-right: 10px;
+header .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+header .navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+header .navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+header .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 header .menuFlex {
   list-style-type: none;
@@ -87,15 +105,13 @@ header .menuFlex {
   justify-content: flex-end;
   background-attachment: fixed;
 }
-header ul li a {
-  list-style-type: square;
-  color: lightslategray;
-  font-family: "Mate", sans-serif;
-  font-style: normal;
-  font-size: 25px;
+header .seccionMenu {
+  color: darkcyan;
+  font-size: 30px;
   font-weight: lighter;
-  text-decoration: none;
-  margin: 20px;
+  text-align: right;
+  margin: 10px;
+  padding-right: 10px;
 }
 
 .divIndex, .divLocations, .divContact, .divGallery, .divProducts, .divAboutus {
@@ -256,7 +272,8 @@ section .card {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 1rem;
-  margin: 10px;
+  margin: 5px;
+  margin-bottom: 20px;
 }
 section .card-img-top {
   border-radius: 1rem;
@@ -298,9 +315,10 @@ section .especificacionesProducts {
 }
 
 /* Contact */
-section .containerContact {
+.formContact {
   display: flex;
 }
+
 section .pContact {
   color: dimgrey;
   font-size: 20px;
@@ -468,6 +486,7 @@ footer .btn-outline-secondary {
   border-radius: 20px;
   border-style: dashed;
   border-color: slategray;
+  width: 50%;
   margin: 20px;
   padding: 20px;
 }
@@ -588,9 +607,13 @@ footer .btn-outline-secondary {
     margin: 25px;
   }
 
-  .containerContact {
+  .formContact {
     display: flex;
     flex-direction: column;
+  }
+
+  .fieldsetContact1, .fieldsetContact2 {
+    width: 80%;
   }
 }
 /* Smartphone */
@@ -651,9 +674,13 @@ footer .btn-outline-secondary {
     padding: 10px;
   }
 
-  .containerContact {
+  .formContact {
     display: flex;
     flex-direction: column;
+  }
+
+  .fieldsetContact1, .fieldsetContact2 {
+    width: 70%;
   }
 }
 /* GRADIENTES */
@@ -677,7 +704,6 @@ a:hover {
   background-image: linear-gradient(blue lightblue);
 }
 
-/* TRANSFORMACIONES */
 /* ANIMACIONES */
 .div1Animado {
   animation-name: div1Animado;
@@ -689,7 +715,6 @@ a:hover {
   animation-duration: 2s;
 }
 
-/* KEYFRAMES */
 /* PSEUDO CLASES - PSEUDO ELEMENTOS */
 :link {
   color: lightslategray;
