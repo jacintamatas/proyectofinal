@@ -44,12 +44,17 @@ body {
 
     header {
         z-index: 2;
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 5fr;
         width: 100%;
         position: fixed;
-        background-color: $colorBackground;
         height: auto;
+        justify-content: space-between;
+        background-color: $colorBackground;
+
+        nav {
+            background-color: $colorBackground;
+        }
     }
 
     main {
@@ -81,7 +86,6 @@ header {
     height: 100px;
     width: 100px;
     margin: 10px;
-    padding-top: 10px;
     animation-name: animatedLogo;
     }
 
@@ -89,7 +93,9 @@ header {
         display: flex;
         flex-wrap: inherit;
         align-items: center;
-        justify-content: space-between;
+        padding: 0px;
+        margin: 0px;
+        background-color: $colorBackground;
     }
 
     .navbar-toggler {
@@ -113,36 +119,57 @@ header {
     }
 
     .navbar {
-        position: relative;
+        position: static;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        justify-content: flex-end;
+        margin: 0px;
+        padding: 0px;
+        background-color: $colorBackground;
     }
 
     .navbar-nav {
         display: flex;
         flex-direction: column;
-        padding-left: 0;
-        margin-bottom: 0;
+        padding: 0px;
+        margin: 0px;
         list-style: none;
+        background-color: $colorBackground;
+        flex-wrap: wrap;
     }
 
-
-    .menuFlex {
+    #menuFlex {
         list-style-type: none;
-        color:  $colorBackground;
-        padding: 10px;
-        padding-top: 40px;
-        margin: 0px;
+        background-color: $colorBackground;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
         background-attachment: fixed;
+        padding-top: 30px;
+        padding: 10px;
     }
+
+    .nav-item {
+        list-style-type: none;
+        color: lightslategray;
+        font-family: "Mate", sans-serif;
+        font-style: normal;
+        font-size: 23px;
+        font-weight: lighter;
+        text-decoration: none;
+        background-color:  $colorBackground;
+
+    }
+
+    .nav-link {
+        display: flex;
+        color: lightslategray;
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+
 
     .seccionMenu {
         color: $colorAlison;
@@ -654,6 +681,8 @@ footer {
         flex-wrap: wrap;
 
     }
+
+
     .seccionMenu {
         color: $colorAlison;
         font-size: 25px;
@@ -663,9 +692,9 @@ footer {
         padding-right: 10px;
     }
     
-    .menuFlex {
+        #menuFlex {
         list-style-type: none;
-        color:  $colorBackground;
+        background-color:  $colorBackground;
         padding-top: 40px;
         display: flex;
         flex-direction: row;
@@ -714,7 +743,7 @@ footer {
         padding-right: 10px;
     }
     
-    .menuFlex {
+    #menuFlex {
         list-style-type: none;
         color:  $colorBackground;
         padding: 20px;
@@ -756,6 +785,7 @@ footer {
     header {
         width: 100%;
         flex-wrap: wrap;
+        background-color: $colorBackground;
     }
 
     body {
@@ -772,8 +802,9 @@ footer {
         margin: 20px;
         padding-right: 10px;
     }
-    
-    .menuFlex {
+
+
+    #menuFlex {
         list-style-type: none;
         color:  $colorBackground;
         padding-top: 40px;
@@ -832,15 +863,16 @@ footer {
     transition-duration: 2s;
 }
 
-a:hover {
-    font-size: 27px;
-    transition-duration: 1s;
+.nav-link:hover {
+    font-size: 25px;
+    transition-duration: 2s;
 }
 
 .menuResto:hover {
     background-image: linear-gradient(blue lightblue);
 
 }
+
 
 
 

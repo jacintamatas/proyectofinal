@@ -17,12 +17,16 @@ body {
 }
 body header {
   z-index: 2;
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 5fr;
   width: 100%;
   position: fixed;
-  background-color: #c5e7eb;
   height: auto;
+  justify-content: space-between;
+  background-color: #c5e7eb;
+}
+body header nav {
+  background-color: #c5e7eb;
 }
 body main {
   flex-wrap: wrap;
@@ -50,14 +54,15 @@ header .logoAlisonHeader {
   height: 100px;
   width: 100px;
   margin: 10px;
-  padding-top: 10px;
   animation-name: animatedLogo;
 }
 header .container-fluid {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  background-color: #c5e7eb;
 }
 header .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -78,32 +83,50 @@ header .navbar-toggler-icon {
   background-size: 100%;
 }
 header .navbar {
-  position: relative;
+  position: static;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
+  background-color: #c5e7eb;
 }
 header .navbar-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-header .menuFlex {
-  list-style-type: none;
-  color: #c5e7eb;
-  padding: 10px;
-  padding-top: 40px;
+  padding: 0px;
   margin: 0px;
+  list-style: none;
+  background-color: #c5e7eb;
+  flex-wrap: wrap;
+}
+header #menuFlex {
+  list-style-type: none;
+  background-color: #c5e7eb;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   background-attachment: fixed;
+  padding-top: 30px;
+  padding: 10px;
+}
+header .nav-item {
+  list-style-type: none;
+  color: lightslategray;
+  font-family: "Mate", sans-serif;
+  font-style: normal;
+  font-size: 23px;
+  font-weight: lighter;
+  text-decoration: none;
+  background-color: #c5e7eb;
+}
+header .nav-link {
+  display: flex;
+  color: lightslategray;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 header .seccionMenu {
   color: darkcyan;
@@ -537,9 +560,9 @@ footer .btn-outline-secondary {
     padding-right: 10px;
   }
 
-  .menuFlex {
+  #menuFlex {
     list-style-type: none;
-    color: #c5e7eb;
+    background-color: #c5e7eb;
     padding-top: 40px;
     display: flex;
     flex-direction: row;
@@ -583,7 +606,7 @@ footer .btn-outline-secondary {
     padding-right: 10px;
   }
 
-  .menuFlex {
+  #menuFlex {
     list-style-type: none;
     color: #c5e7eb;
     padding: 20px;
@@ -621,6 +644,7 @@ footer .btn-outline-secondary {
   header {
     width: 100%;
     flex-wrap: wrap;
+    background-color: #c5e7eb;
   }
 
   body {
@@ -638,7 +662,7 @@ footer .btn-outline-secondary {
     padding-right: 10px;
   }
 
-  .menuFlex {
+  #menuFlex {
     list-style-type: none;
     color: #c5e7eb;
     padding-top: 40px;
@@ -695,9 +719,9 @@ footer .btn-outline-secondary {
   transition-duration: 2s;
 }
 
-a:hover {
-  font-size: 27px;
-  transition-duration: 1s;
+.nav-link:hover {
+  font-size: 25px;
+  transition-duration: 2s;
 }
 
 .menuResto:hover {
