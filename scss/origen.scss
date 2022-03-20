@@ -355,7 +355,7 @@ section {
     .productsTitulos {
         display: flex;
         color:  $colorAlison;
-        font-size: 40px;
+        font-size: 35px;
         text-align: left;
         text-decoration: underline;
         @include espacios(10px, 10px);
@@ -377,14 +377,15 @@ section {
 
     .card-img-top {
         border-radius: 1rem;
-        padding: 5px;
-        padding-top: 10px;
+        padding: 10px;
+        padding-top: 30px;
         width: 100%;
     }
     
     .card-body {
         flex: auto;
         padding: 10px;
+        text-align: center;
     }
 
     .descripcionesProducts {
@@ -456,6 +457,11 @@ section {
         @include espacios(10px, 10px);
         flex-wrap: wrap;
     }
+}
+
+
+div {
+
     .contactar {
         color: $colorAlison;
         font-size: 20px;
@@ -473,6 +479,7 @@ section {
         @include espacios(10px, 10px);
     }
 }
+
 
 
 

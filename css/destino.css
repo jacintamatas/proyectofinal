@@ -279,7 +279,7 @@ section .containerProducts {
 section .productsTitulos {
   display: flex;
   color: darkcyan;
-  font-size: 40px;
+  font-size: 35px;
   text-align: left;
   text-decoration: underline;
   margin: 10px;
@@ -300,13 +300,14 @@ section .card {
 }
 section .card-img-top {
   border-radius: 1rem;
-  padding: 5px;
-  padding-top: 10px;
+  padding: 10px;
+  padding-top: 30px;
   width: 100%;
 }
 section .card-body {
   flex: auto;
   padding: 10px;
+  text-align: center;
 }
 section .descripcionesProducts {
   display: flex;
@@ -367,7 +368,8 @@ section .formularioRespuesta {
   padding: 10px;
   flex-wrap: wrap;
 }
-section .contactar {
+
+div .contactar {
   color: darkcyan;
   font-size: 20px;
   text-align: left;
@@ -378,7 +380,7 @@ section .contactar {
   margin: 10px;
   padding: 10px;
 }
-section .legendContact {
+div .legendContact {
   color: dimgrey;
   font-size: 25px;
   margin: 10px;
