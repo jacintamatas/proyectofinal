@@ -156,7 +156,7 @@ header .seccionMenu {
 }
 
 .divGallery {
-  background-image: url(https://duyt4h9nfnj50.cloudfront.net/resized/1525793290598-w2880-30.jpg);
+  background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F24%2F2019%2F09%2FGettyImages-1070622360-2000.jpg);
 }
 
 .divContact {
@@ -332,8 +332,8 @@ section .especificacionesProducts {
 
 /* Gallery */
 .carouselIndexGallery {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   align-content: center;
   justify-content: center;
 }
@@ -486,21 +486,6 @@ footer .btn-outline-secondary {
   padding: 10px;
 }
 
-/* Imagenes GALLERY */
-.imgsGallery {
-  display: grid;
-  grid-area: auto;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 50px;
-  margin: 30px;
-  padding: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Imagenes CONTACT */
-/* Imagenes LOCATIONS */
 /* GRIDS EXPLICITA */
 .fieldsetContact1, .fieldsetContact2 {
   display: grid;
@@ -693,8 +678,7 @@ footer .btn-outline-secondary {
     display: grid;
     color: rgba(0, 139, 139, 0.808);
     font-size: 20px;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;
     margin: 20px;
     padding: 10px;
